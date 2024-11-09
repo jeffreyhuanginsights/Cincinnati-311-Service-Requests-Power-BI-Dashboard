@@ -26,3 +26,56 @@ Some anomalies existed in the dataset. Some requests had an "update time" that p
 
 ### Public Safety
 ![image](https://github.com/user-attachments/assets/60d13840-d60a-4b21-b5bc-38e0bafe6a9e)
+
+## Dataset Overview
+The dataset is sourced from Cincinnati’s public 311 OData feed, which provides detailed information about service requests. Below are some key features of the dataset:
+
+Dataset Details
+Source: Cincinnati OData feed (311 service requests).
+Number of Records: Over 1,300,000 rows.
+
+Key Columns:
+STATUS: Current status of the service request (NEW, OPEN, PEND, CLOS).
+REQUESTED_DATETIME and UPDATED_DATETIME: Timestamps for request creation and updates.
+SERVICE_NAME: Type of service requested (e.g., Pothole Repair, Garbage Pickup).
+AGENCY_RESPONSIBLE: Department that will handle the 311 request.
+ZIPCODE: Geographical location of the request.
+LATITUDE, LONGITUDE: Exact location of request.
+
+Challenges
+Blank Columns: Certain columns such as STATUS_NOTES, SERVICE_NOTICE, and ADDRESS_ID were consistently blank and excluded from the analysis.
+Negative Resolution Times: Instances where UPDATED_DATETIME predates REQUESTED_DATETIME highlight data quality issues.
+Duplicate Timestamps: Many rows have identical REQUESTED_DATETIME and UPDATED_DATETIME, limiting time-based insights for these entries.
+
+## Dataset Description (by Cincinnati)
+https://data.cincinnati-oh.gov/Thriving-Neighborhoods/Cincinnati-311-Non-Emergency-Service-Requests/4cjh-bm8b/about_data
+
+Dataset Name: Cincinnati 311 (Non-Emergency) Service Requests
+Dataset Identifier (i.e., Socrata 4x4): 4cjh-bm8b
+
+| Dataset Columns:   | Description:                    |
+|--------------------|---------------------------------|
+| Jurisdiction_ID    | ID of Jurisdiction              |
+| Service_Request_ID | Offense Type                    |
+| Status             | Status of Request               |
+| Status_Notes       | Status Notes                    |
+| Service_Name       | Name of Service                 |
+| Service_Code       | Code of Service                 |
+| Description        | Service Description             |
+| Agency_Responsible | Agency responsible for request  |
+| Service_Notice     | Notice of Service               |
+| Requested_Datetime | Request Date and Time           |
+| Updated_Datetime   | Updated Date and Time           |
+| Expected_Datetime  | Expected Date and Time          |
+| Address            | Address of Request              |
+| Address_ID         | Address ID                      |
+| Zipcode            | Zip code of Request             |
+| Latitude           | Location                        |
+| Longitude          | Location                        |
+| Requested_Date     | Request Date and Time           |
+| Updated_Date       | Updated Date and Time           |
+| Last_Table_ Update | Last Table Update Date and Time |
+
+## License
+Creative Commons with Attribution 4.0 International (CC BY)
+Attribute to Jeffrey Huang
