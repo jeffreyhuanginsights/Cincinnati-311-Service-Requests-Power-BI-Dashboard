@@ -76,6 +76,9 @@ Dataset Identifier (i.e., Socrata 4x4): 4cjh-bm8b
 | Updated_Date       | Updated Date and Time           |
 | Last_Table_ Update | Last Table Update Date and Time |
 
+## Download Link
+https://drive.google.com/drive/folders/10d32tSysrMpeG0T-a_H-IJ7Cwmsolb_Y?usp=sharing
+
 ## License
 Creative Commons with Attribution 4.0 International (CC BY)
 Attribute to Jeffrey Huang
